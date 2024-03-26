@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #c76b98;
+}
+
+header {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    text-align: center;
+}
