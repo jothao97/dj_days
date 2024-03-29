@@ -20,11 +20,11 @@ document.addEventListener("DOMContentLoaded", function() {
         
 
             // looping through each album in the album list to create list item for each
-            for (let i=0; i < albumListArray.length, i++;){
+            for (let i=0; i < albumListArray.length; i++){
                 let album = albumListArray[i];
                 let albumItem = document.createElement('li');
                 albumItem.textContent = `${album.artist} - ${album.title} Genre: ${album.genre}`;
-                albumList.appendchild(albumItem);
+                albumList.appendChild(albumItem);
             }
         }
 
