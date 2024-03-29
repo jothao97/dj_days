@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 genre: genre
             };
             albumListArray.push(album);
-            return albumListArray;
+            console.log(albumListArray);
         }
 
         // function to display the list of albums
