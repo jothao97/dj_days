@@ -1,3 +1,5 @@
+// This JS script is to see the JS display the albumlist already made
+
 document.addEventListener("DOMContentLoaded", function() {
         // define an array to store a list of albums and the information
         let albumListArray = [];

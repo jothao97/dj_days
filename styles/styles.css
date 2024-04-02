@@ -30,6 +30,7 @@ body + div {
 h2 {
     padding-top: .5cm;
     padding-bottom: 0.5cm;
+    kerning: 2;
 }
 
 .now-playing img {
