@@ -81,3 +81,16 @@ h2 {
     display: inline-block;
     background-color: #EAE7E2;
 }
+
+.added-album{
+    border: dotted 3px;
+    border-radius: 20px;
+    padding: .5cm;
+    width: 13cm;
+    display: inline-block;
+    background-color: #EAE7E2;
+}
+
+.last-padding {
+    margin-bottom: 3cm;
+}

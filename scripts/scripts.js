@@ -1,4 +1,4 @@
-// This JS script is to see the JS display the albumlist already made
+// This section is to see the JS display the albumlist already made
 
 document.addEventListener("DOMContentLoaded", function() {
         // define an array to store a list of albums and the information
@@ -13,6 +13,15 @@ document.addEventListener("DOMContentLoaded", function() {
             };
             albumListArray.push(album);
             console.log(albumListArray);
+        }
+
+        // creating class for albumlist
+        class albumlist {
+            constructor(artist, title, genre){
+                this.artist = artist;
+                this.title = title;
+                this.genre = genre;
+            }
         }
 
         // function to display the list of albums
@@ -44,4 +53,19 @@ document.addEventListener("DOMContentLoaded", function() {
 
         //display the albums in the album list
         displayAlbums();
+
+/// this section is to be able to add new albums and make them appear on the album list
+
+        document.getElementById('add-album-btn').onclick = () => {
+            const artist = document.getElementById('artist-input').value;
+            const title = document.getElementById('album-title-input').value;
+            const genre = document.getElementById('genre-input').value;
+            const album = new albumlist(artist, title, genre);
+            albumListArray.push(album);
+
+            displayArrayAsList(albumListArray, 'recently-added-list');
+        }
+
 })
+
+
