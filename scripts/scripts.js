@@ -67,6 +67,5 @@ document.addEventListener("DOMContentLoaded", function() {
             // Display the updated album list
             displayAlbums();
 
+        }
 })
-
-
