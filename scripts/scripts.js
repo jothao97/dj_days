@@ -34,22 +34,22 @@ document.addEventListener("DOMContentLoaded", function() {
             for (let i=0; i < albumListArray.length; i++){
                 let album = albumListArray[i];
                 let albumItem = document.createElement('li');
-                albumItem.textContent = `${album.artist} - ${album.title}`;
+                albumItem.textContent = `${album.artist} - ${album.title} Genre: ${album.genre}`;
                 albumList.appendChild(albumItem);
             }
         }
 
         // list of album to display in albumlist array
-        addAlbum("The Beatles", "Abbey Road");
-        addAlbum("Michael Jackson", "Thriller");
-        addAlbum("Dylan", "Highway 61 Revisited");
-        addAlbum("Madonna", "Like a Prayer");
-        addAlbum("Queen", "A Night at the Opera");
-        addAlbum("Led Zeppelin", "Led Zeppelin IV");
-        addAlbum("Pink Floyd", "The Dark Side of the Moon");
-        addAlbum("Prince", "Purple Rain");
-        addAlbum("David Bowie", "The Rise and Fall of Ziggy Stardust and the Spiders from Mars");
-        addAlbum("Nirvana", "Nevermind");
+        addAlbum("Katy Perry", "Teenage Dream", "Pop");
+        addAlbum("Michael Jackson", "Thriller", "Pop");
+        addAlbum("Taylor Swift", "Speak Now", "Pop");
+        addAlbum("Madonna", "Like a Prayer", "Pop");
+        addAlbum("Justin Bieber", "My World", "Pop");
+        addAlbum("Olivia Rodrigo", "GUTS", "Pop");
+        addAlbum("Dua Lipa", "Future Nostalgia", "Pop");
+        addAlbum("Lady Gaga", "Chromatica", "Pop");
+        addAlbum("Mac Miller", "Circles", "Rap");
+        addAlbum("Nirvana", "Nevermind", );
 
         //display the albums in the album list
         displayAlbums();
@@ -60,11 +60,12 @@ document.addEventListener("DOMContentLoaded", function() {
             const artist = document.getElementById('artist-input').value;
             const title = document.getElementById('album-title-input').value;
             const genre = document.getElementById('genre-input').value;
-            const album = new albumlist(artist, title, genre);
-            albumListArray.push(album);
-
-            displayArrayAsList(albumListArray, 'recently-added-list');
-        }
+            
+            // Create a new album object using the addAlbum function
+            addAlbum(artist, title, genre);
+            
+            // Display the updated album list
+            displayAlbums();
 
 })
 
