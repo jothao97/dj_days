@@ -14,35 +14,40 @@
         <h1>DJ Days</h1><br>
         <p>Welcome to DJ Days</p>
         <p>Music that brings everyone together at the touch of your fingertips</p><br>
-
         <div>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Album List</a></li>
-                    <li><a href="#">Add New Album</a></li>
+                    <li><a href="#nowplaying">Now Playing</a></li>
+                    <li><a href="#album">Album List</a></li>
+                    <li><a href="#addalbum">Add New Album</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <body>
+        <section id="nowplaying">
         <div class="now-playing">
+            <h2 class="now-playing1">Now Playing</h2>
             <div>
-                <h2>Now Playing</h2>
-                <img src="Images/album cover .jpg" alt="Album Cover Photo"><br>
-                <audio controls>
-                </audio>
-                    <ul>
+                <img class="img" src="Images/album cover .jpg" alt="Album Cover Photo"><br>
+                    <ul class="ul">
                         <li>Artist:</li>
                         <li>Album Title:</li>
                         <li>Song Title:</li>
                     </ul>
+                <audio controls class="audio">
+                </audio>
             </div>
         </div>
+        </section>
+        <section id="album">
             <div class="album-list">
                 <h2>Album List</h2>
                     <ul id="album-list-js"></ul>
             </div>
+        </section>
+        <section id="addalbum">
         <div class="add-new-album">
             <h2>Add New Album</h2>
                 <div class="input-contents">
@@ -73,6 +78,7 @@
                     </form>
                 </div>
         </div>
+        </section>
         <div id="background-wrap">
             <div class="x1">
                 <div class="cloud"></div>

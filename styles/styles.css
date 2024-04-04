@@ -6,6 +6,7 @@
 html {
     background-color: #B9CBD9;
     background-image: linear-gradient(#B9CBD9, #cfbede);
+    scroll-behavior: smooth;
 }
 
 header {
@@ -29,6 +30,11 @@ nav ul li{
     background-color: #EAE7E2;
     padding: 5px 10px 5px 10px;
     text-decoration: none;
+}
+
+.ul li {
+    font-weight: 700;
+    padding: 20px;
 }
 
 nav {
@@ -61,11 +67,17 @@ body {
 
 audio {
     width: 15cm;
+   
 }
 
 h1 {
     font-size: 100px;
     font-family: "Rubik Scribble", system-ui;
+}
+
+h2 {
+    font-family: "Rubik Scribble", system-ui;
+    font-size: 40px;
 }
 
 body + div {
@@ -76,12 +88,11 @@ body + div {
 h2 {
     padding-top: .5cm;
     padding-bottom: 0.5cm;
-    kerning: 2;
 }
 
 .now-playing img {
-    height: 50%;
-    width: 40%;
+    height: 5cm;
+    width: 7cm;
 }
 
 .album-list {
@@ -102,17 +113,39 @@ h2 {
 }
 
 
-.now-playing div {
-    height: 12cm;
+.now-playing div{
+    height: 10cm;
+    width: 18cm;
     border: dotted 3px;
     border-radius: 20px;
     background-color: #EAE7E2;
     margin-bottom: 2cm;
+    display: grid;
+    grid-template-areas: 
+    'ul img'
+    'ul img'
+    'audio audio';
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    grid-area: img;
+}
+
+.ul {
+    grid-area: ul;
+    text-align: center;
+
+}
+
+.audio {
+    grid-area: audio;
+    text-align: center;
 }
 
 .now-playing ul {
     list-style-type: none;
-
 }
 
 .add-new-album {
@@ -273,3 +306,4 @@ h2 {
 	right: 50px;
 	top: -90px;
 }
+

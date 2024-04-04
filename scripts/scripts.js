@@ -34,22 +34,22 @@ document.addEventListener("DOMContentLoaded", function() {
             for (let i=0; i < albumListArray.length; i++){
                 let album = albumListArray[i];
                 let albumItem = document.createElement('li');
-                albumItem.textContent = `${album.artist} - ${album.title} Genre: ${album.genre}`;
+                albumItem.textContent = `${album.artist} - ${album.title}`;
                 albumList.appendChild(albumItem);
             }
         }
 
         // list of album to display in albumlist array
-        addAlbum("The Beatles", "Abbey Road", "genre");
-        addAlbum("Michael Jackson", "Thriller", "genre");
-        addAlbum("Dylan", "Highway 61 Revisited", "genre");
-        addAlbum("Madonna", "Like a Prayer", "genre");
-        addAlbum("Queen", "A Night at the Opera", "genre");
-        addAlbum("Led Zeppelin", "Led Zeppelin IV", "genre");
-        addAlbum("Pink Floyd", "The Dark Side of the Moon", "genre");
-        addAlbum("Prince", "Purple Rain", "genre");
-        addAlbum("David Bowie", "The Rise and Fall of Ziggy Stardust and the Spiders from Mars", "genre");
-        addAlbum("Nirvana", "Nevermind", "genre");
+        addAlbum("The Beatles", "Abbey Road");
+        addAlbum("Michael Jackson", "Thriller");
+        addAlbum("Dylan", "Highway 61 Revisited");
+        addAlbum("Madonna", "Like a Prayer");
+        addAlbum("Queen", "A Night at the Opera");
+        addAlbum("Led Zeppelin", "Led Zeppelin IV");
+        addAlbum("Pink Floyd", "The Dark Side of the Moon");
+        addAlbum("Prince", "Purple Rain");
+        addAlbum("David Bowie", "The Rise and Fall of Ziggy Stardust and the Spiders from Mars");
+        addAlbum("Nirvana", "Nevermind");
 
         //display the albums in the album list
         displayAlbums();
