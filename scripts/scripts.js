@@ -49,23 +49,34 @@ document.addEventListener("DOMContentLoaded", function() {
         addAlbum("Dua Lipa", "Future Nostalgia", "Pop");
         addAlbum("Lady Gaga", "Chromatica", "Pop");
         addAlbum("Mac Miller", "Circles", "Rap");
-        addAlbum("Nirvana", "Nevermind", );
+        addAlbum("Nirvana", "Nevermind", "EDM");
 
         //display the albums in the album list
         displayAlbums();
 
 /// this section is to be able to add new albums and make them appear on the album list
 
-        document.getElementById('add-album-btn').onclick = () => {
+                // Get the form element
+        const addAlbumForm = document.getElementById('add-album-form');
+
+        // Add event listener for form submission
+        addAlbumForm.addEventListener('submit', function(event) {
+            // Prevent the default form submission behavior
+            event.preventDefault();
+
+            // Get values from form inputs
             const artist = document.getElementById('artist-input').value;
             const title = document.getElementById('album-title-input').value;
             const genre = document.getElementById('genre-input').value;
-            
+
             // Create a new album object using the addAlbum function
             addAlbum(artist, title, genre);
-            
+
             // Display the updated album list
             displayAlbums();
 
-        }
+            // Clear the form inputs
+            addAlbumForm.reset();
+
+    })
 })

@@ -30,7 +30,7 @@
         <div class="now-playing">
             <h2 class="now-playing1">Now Playing</h2>
             <div>
-                <img class="img" src="Images/album cover .jpg" alt="Album Cover Photo"><br>
+                <iframe class="video" width="300" height="220" src="https://www.youtube.com/embed/8-3QBluCZQ0?si=v1fRVDkL14ymLL19" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <ul class="ul">
                         <li>Artist:</li>
                         <li>Album Title:</li>
@@ -51,7 +51,7 @@
         <div class="add-new-album">
             <h2>Add New Album</h2>
                 <div class="input-contents">
-                    <form action="">
+                    <form action="" id="add-album-form">
                         <div>
                             <label for="album-title-input">Album Title</label>
                             <input type="text" id="album-title-input">
@@ -68,6 +68,7 @@
                                 <option value="rock">Rock</option>
                                 <option value="edm">EDM</option>
                                 <option value="jazz">Jazz</option>
+                                <option value="Study">Chill Beats</option>
                             </select>
                         </div>
                         <div>
